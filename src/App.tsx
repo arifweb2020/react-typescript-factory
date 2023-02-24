@@ -4,6 +4,8 @@ import ChildA from "./component/ChildA";
 import ChildB from "./component/ChildB";
 import ChildC from "./component/ChildC";
 import ChildD from "./component/ChildD";
+import Common from "./component/Common";
+import State from "./component/State";
 
 function App() {
   const [data, setData] = useState([]);
@@ -52,6 +54,9 @@ function App() {
         })}
       </div>
       <div style={{ marginTop: "30px" }}>
+        <State/>
+        <Common name="possible"/>
+        <Common flag={true}/>
         <ChildA
           name="string checksss"
           id={23}
