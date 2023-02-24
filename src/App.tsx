@@ -57,7 +57,10 @@ function App() {
           id={23}
           condition={true}
           conditioncheck="sports"
-        />
+          style={{color:'red'}}
+        >
+          <p>ChildA children props</p>
+          </ChildA>
         <ChildB college={list} test="Array Check" name={alpha} apiData={data}/>
         <ChildC course={tech} heading="Object Test" />
         <ChildD />
