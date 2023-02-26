@@ -5,7 +5,9 @@ import ChildB from "./component/ChildB";
 import ChildC from "./component/ChildC";
 import ChildD from "./component/ChildD";
 import Common from "./component/Common";
+import Generics from "./component/Generics";
 import State from "./component/State";
+import UseStateTs from "./component/UseStateTs";
 
 function App() {
   const [data, setData] = useState([]);
@@ -54,6 +56,32 @@ function App() {
         })}
       </div>
       <div style={{ marginTop: "30px" }}>
+        <UseStateTs/>
+        <Generics
+        items={["A","B","C"]}
+        onClick={(item)=>console.log(item)}
+        />
+        <Generics
+        items={[1,2,3]}
+        onClick={(item)=>console.log(item)}
+        />
+         {/* <Generics
+
+        items={[
+          {
+            id:1,
+            first:"arif",
+            last:"hussain"
+          },
+          {
+            id:2,
+            first:"virat",
+            last:"kohli"
+          }
+        ]}
+
+        onClick={(item)=>console.log(item)}
+        /> */}
         <State/>
         <Common name="possible"/>
         <Common flag={true}/>
